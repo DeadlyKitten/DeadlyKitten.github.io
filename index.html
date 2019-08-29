@@ -1,0 +1,13 @@
+<div style="text-align: center; margin-top: 10em;">
+    <h3>The time is currently</h3>
+    <h1 id="timer" style="font-size: 300%; margin-top: 0; margin-bottom: 0;"></h1> </h1>
+    <h3>in Minecraft ticks.</h3>
+</div>
+
+<script>
+    let timer = document.querySelector('#timer');
+    let currentTime = Date.now() * 20;
+    setInterval(function () {
+            timer.innerHTML = (currentTime++).toString();
+        }, 50);
+</script>
