@@ -5,7 +5,7 @@
 </div>
 
 <script>
-    let timer = document.querySelector('#timer');
+    const timer = document.querySelector('#timer');
     let currentTime = Date.now() * 20;
     setInterval(function () {
             timer.innerHTML = (currentTime++).toString();
